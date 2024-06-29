@@ -1,1 +1,44 @@
-<p>tastatur works!</p>
+<h1>Tastaturbedienung</h1>
+
+<p>TODO: Text über Tastaturnavigation</p>
+
+<p>
+  <strong>Übung</strong>: Befüllen Sie das Formular, ohne die Maus zu verwenden.
+  Klicken sie anschließend auf "Speichern". Hinweis: Die eingegebenen Daten
+  werden nicht wirklich gespeichert, es handelt sich um ein Test-Formular.
+</p>
+
+<section class="form">
+  <mat-form-field>
+    <mat-label>Vorname</mat-label>
+    <input matInput tabindex="1" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Nachname</mat-label>
+    <input matInput tabindex="-1" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Alter</mat-label>
+    <input matInput type="number" min="0" tabindex="3" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Lieblingsfarbe</mat-label>
+    <mat-select>
+      <mat-option value="">rot</mat-option>
+      <mat-option value="">grün</mat-option>
+      <mat-option value="">blau</mat-option>
+      <mat-option value="">gelb</mat-option>
+      <mat-option value="">weiß</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Kommentar</mat-label>
+    <textarea matInput tabindex="2"></textarea>
+  </mat-form-field>
+
+  <button mat-flat-button (click)="showSaveMessage()">Speichern</button>
+</section>

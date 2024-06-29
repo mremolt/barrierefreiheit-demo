@@ -71,3 +71,60 @@
 
   <p>Anzahl der Klicks: {{ counter() }}</p>
 </section>
+
+<section>
+  <h2>Bilder und Icons</h2>
+
+  <p>
+    TODO: Beschreibung ALT-Texte und eventuell aria-hidden bei "Icons + Text",
+    da wird dann alles 2x vorgelesen.
+  </p>
+
+  <div>
+    <p>
+      <strong>Übung</strong>: lassen Sie sich die vier Bilder jeweils vom
+      Screenreader vorlesen, indem Sie mit der Maus darüber navigieren. Was
+      fällt Ihnen auf?
+    </p>
+
+    <div class="images">
+      <img class="image" src="amsel.jpg" width="250" height="180" />
+      <img class="image" src="amsel.jpg" width="250" height="180" alt="Bild" />
+      <img
+        class="image"
+        src="amsel.jpg"
+        width="250"
+        height="180"
+        alt="Bild einer Amsel, die auf einem Zaun sitzt."
+      />
+      <figure>
+        <img
+          src="amsel.jpg"
+          alt="Bild einer Amsel, die auf einem Zaun sitzt."
+        />
+        <figcaption>Bild einer Amsel, die auf einem Zaun sitzt.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <p>
+    Gerade bei Icons ohne eigene Bedeutung, wie als Teil einer Überschrift, ist
+    es manchmal besser, das Icon-Bild vor dem Screenreader vollständig zu
+    verstecken.
+  </p>
+
+  <p>
+    <strong>Übung</strong>: Lassen Sie sich die zwei folgenden Überschriften
+    vorlesen. Was fällt Ihnen im Vergleich auf? Was ist störend?
+  </p>
+
+  <h4>
+    <img src="lightbulb.png" height="32" alt="Bild einer Glühbirne" />Das ist
+    eine Überschrift mit einem Icon.
+  </h4>
+
+  <h4>
+    <img src="lightbulb.png" height="32" aria-hidden="true" />Das ist eine
+    Überschrift mit einem Icon.
+  </h4>
+</section>

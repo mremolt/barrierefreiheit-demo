@@ -21,3 +21,19 @@
     margin: 5px 10px;
   }
 }
+
+.image {
+}
+
+.images {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+figure {
+  margin: 0;
+  img {
+    width: 250px;
+  }
+}

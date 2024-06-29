@@ -16,13 +16,6 @@
           >
         </mat-menu>
 
-        <button mat-button [matMenuTriggerFor]="audio">Hören</button>
-        <mat-menu #audio="matMenu">
-          <a [routerLink]="" mat-menu-item>Item 1</a>
-          <a [routerLink]="" mat-menu-item>Item 1</a>
-          <a [routerLink]="" mat-menu-item>Item 1</a>
-        </mat-menu>
-
         <button mat-button [matMenuTriggerFor]="motorik">Motorik</button>
         <mat-menu #motorik="matMenu">
           <a [routerLink]="['motorik', 'elemente']" mat-menu-item

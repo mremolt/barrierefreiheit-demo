@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { ColorsComponent } from './colors/colors.component';
 import { SpracheComponent } from './kognitiv/sprache/sprache.component';
 import { NavigationComponent } from './kognitiv/navigation/navigation.component';
 import { ScreenreaderComponent } from './kognitiv/screenreader/screenreader.component';
@@ -12,7 +11,6 @@ import { ElementeComponent } from './motorik/elemente/elemente.component';
 import { TastaturComponent } from './motorik/tastatur/tastatur.component';
 
 export const routes: Routes = [
-  { path: 'colors', component: ColorsComponent },
   {
     path: 'sehen',
     children: [
