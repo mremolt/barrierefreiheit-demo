@@ -1,0 +1,73 @@
+<h1>Semantisches HTML für Screenreader</h1>
+
+<p>TODO: Text warum wichtig</p>
+
+<p>
+  Beschreibung Einkaufsliste: Beide sehen optisch gleich aus, aber nur die
+  zweite ist als Liste ausgezeichnet und wird so vom Screenreader benannt.
+</p>
+
+<p>
+  <strong>Übung</strong>: Lassen Sie sich vom Screenreader die beiden Listen
+  vorlesen. Was fällt Ihnen auf?
+</p>
+
+<div class="shopping">
+  <strong>Einkaufsliste</strong>
+
+  <p>Bananen</p>
+  <p>Brot</p>
+  <p>Käse</p>
+  <p>Schokolade</p>
+  <p>Waschmittel</p>
+</div>
+
+<section class="shopping">
+  <h1>Einkaufsliste</h1>
+
+  <ul>
+    <li>Bananen</li>
+    <li>Brot</li>
+    <li>Käse</li>
+    <li>Schokolade</li>
+    <li>Waschmittel</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Buttons</h2>
+
+  <p>
+    Gerade bei Buttons ist nicht nur die Optik wichtig, der Screenreader muss
+    auch erkennen, dass es sich um einen Button handelt.
+  </p>
+
+  <p>
+    <strong>Übung</strong>: Lassen Sie sich vom Screenreader die drei Buttons
+    vorlesen. Was fällt ihnen auf.
+
+    <br />
+
+    <strong>Bonus: </strong> Versuchen Sie auch, die drei Buttons nur mit der
+    Tastatur zu klicken, um den Counter zu erhöhen.
+  </p>
+
+  <p>
+    <span role="none" class="button" (click)="increase()">klick mich</span>
+    Einfaches span-Element
+  </p>
+
+  <p>
+    <span class="button" tabindex="0" role="button" (click)="increase()">
+      klick mich
+    </span>
+    Ein span-Element mit ARIA-Attributen und Tab-Index
+  </p>
+
+  <p>
+    <button class="button" (click)="increase()">klick mich</button>
+    Natives button-Element
+  </p>
+
+  <p>Anzahl der Klicks: {{ counter() }}</p>
+</section>

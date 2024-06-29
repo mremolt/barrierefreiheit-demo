@@ -1,0 +1,83 @@
+mat-form-field {
+  min-width: 500px;
+}
+
+mat-card {
+  margin: 16px 0;
+}
+
+mat-card-content {
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  margin-right: 10px;
+}
+
+.color-field {
+  margin: 16px;
+  border: 1px solid #000;
+  width: 500px;
+  height: 200px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.rot {
+  background-color: #f00 !important;
+}
+
+.rosa {
+  background-color: #f88379 !important;
+}
+
+.gelb {
+  background-color: #ffea00 !important;
+}
+
+.grün {
+  background-color: #023020 !important;
+  color: #fff;
+}
+
+.hellgrün {
+  background-color: #aaff00 !important;
+}
+
+.blau {
+  background-color: #00008b !important;
+  color: #fff;
+}
+
+.hellblau {
+  background-color: #89cff0 !important;
+}
+
+.grau {
+  background-color: #aaa !important;
+}
+
+.schwarz {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.weiß {
+  background-color: #fff !important;
+}
+
+.success {
+  background-color: #32cd32;
+}
+
+.warning {
+  background-color: #ffea00;
+}
+
+.error {
+  background-color: #ff4433;
+}

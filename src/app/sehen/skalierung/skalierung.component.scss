@@ -1,0 +1,28 @@
+.cards {
+  display: flex;
+  gap: 16px;
+}
+
+mat-card {
+  width: 50%;
+
+  &.limit {
+    max-height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.title {
+  padding: 16px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+}

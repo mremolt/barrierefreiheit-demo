@@ -1,0 +1,120 @@
+<section>
+  <h3>Test der verschiedenen Varianten von Farbfehlsicht</h3>
+
+  <p>
+    TODO: Erklärung. <br />
+    Mit der Chrome-Extension
+    <a
+      href="https://chromewebstore.google.com/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg"
+      target="_blank"
+      >Colorblindly</a
+    >
+    kann man hier sehr schön sehen, wie Farben auf Menschen mit verschiedenen
+    Ausprägungen der Farbfehlsicht wirken.
+  </p>
+
+  <div class="flex">
+    <div>
+      <label>
+        Farbwähler:
+        <input type="color" [(ngModel)]="pickedColor" />
+      </label>
+    </div>
+
+    <div class="color-field" [style.background-color]="pickedColor()"></div>
+  </div>
+</section>
+
+<section>
+  <h3>Farbauswahl in einem Shop</h3>
+
+  <p>TODO: Texte über Farben immer mit beschreibenden Texten hinterlegen.</p>
+
+  <p>
+    <strong>Übung:</strong> Wählen Sie in Colorblindly "Red-blind" und versuchen
+    Sie im folgenden Dropdown, die Farbe "rosa" auszuwählen.
+  </p>
+
+  <mat-form-field>
+    <mat-label>Wählen Sie Ihre Lieblingsfarbe aus</mat-label>
+    <mat-select [(value)]="selectedColor" [class]="selectedColor()">
+      @for (color of colorOptions; track color) {
+      <mat-option [class]="color" [value]="color"></mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <p>Versuchen Sie nun das gleiche in dem zweiten Dropdown.</p>
+
+  <mat-form-field>
+    <mat-label>Wählen Sie Ihre Lieblingsfarbe aus </mat-label>
+    <mat-select [(value)]="selectedColor" [class]="selectedColor()">
+      @for (color of colorOptions; track color) {
+      <mat-option [class]="color" [value]="color">{{ color }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <p>Die gewählte Farbe ist: {{ selectedColor() }}</p>
+
+  <p>
+    Spielen Sie gerne noch mit den verschiedenen Modi in Colorblindly herum und
+    sehen Sie, wie sich das auf das Dropdown auswirkt.
+  </p>
+</section>
+
+<section>
+  <h3>Farben mit Symbolen ergänzen</h3>
+
+  <p>TODO: Text warum Symbole + Farben.</p>
+
+  <p>
+    <strong>Übung:</strong> Schalten Sie auf "Green-blind" und betrachten Sie
+    die folgenden Hinweisboxen. Ändern Sie danach im Dropdown den Typ der
+    Meldung.
+  </p>
+
+  <mat-form-field>
+    <mat-label>Typ der Meldung</mat-label>
+    <mat-select [(value)]="messageType">
+      <mat-option value="color">Farbe</mat-option>
+      <mat-option value="icon">Farbe und Icon</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-card appearance="outlined" class="success">
+    <mat-card-content>
+      @if (messageType() === 'icon') {
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Erfolg"
+        fontIcon="thumb_up"
+      ></mat-icon>
+      } Eine Erfolgsmeldung
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card appearance="outlined" class="warning">
+    <mat-card-content>
+      @if (messageType() === 'icon') {
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Warnung"
+        fontIcon="notifications"
+      ></mat-icon>
+      } Eine Warnung
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card appearance="outlined" class="error">
+    <mat-card-content>
+      @if (messageType() === 'icon') {
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Fehler"
+        fontIcon="error"
+      ></mat-icon>
+      } Ein Fehler ist passiert!
+    </mat-card-content>
+  </mat-card>
+</section>

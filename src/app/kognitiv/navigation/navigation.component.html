@@ -1,0 +1,130 @@
+<h1>Navigation der Webseite</h1>
+
+<p>TODO: Erklärtext</p>
+
+<button mat-flat-button [matMenuTriggerFor]="animals">
+  Bekleidungskategorien - Variante Passierschein A38
+</button>
+<mat-menu #animals="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="oberbekleidung">
+    Oberbekleidung
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="unterbekleidung">
+    Unterbekleidung
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="schuhe">Schuhe</button>
+</mat-menu>
+
+<mat-menu #oberbekleidung="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="hosen">Hosen</button>
+  <button mat-menu-item [matMenuTriggerFor]="shirts">Shirts</button>
+  <button mat-menu-item [matMenuTriggerFor]="jacken">Jacken</button>
+  <button mat-menu-item [matMenuTriggerFor]="roecke">Röcke</button>
+  <button mat-menu-item [matMenuTriggerFor]="sportbekleidung">
+    Sportbekleidung
+  </button>
+</mat-menu>
+
+<mat-menu #unterbekleidung="matMenu">
+  <button mat-menu-item>Unterhemden</button>
+  <button mat-menu-item>Unterhosen</button>
+  <button mat-menu-item>Funktionsunterwäsche</button>
+  <button mat-menu-item [matMenuTriggerFor]="socken">Socken</button>
+</mat-menu>
+
+<mat-menu #schuhe="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="sportschuhe">Sportschuhe</button>
+  <button mat-menu-item [matMenuTriggerFor]="stiefel">Stiefel</button>
+  <button mat-menu-item [matMenuTriggerFor]="strassenschuhe">
+    Straßenschuhe
+  </button>
+  <button mat-menu-item>Hausschuhe</button>
+</mat-menu>
+
+<mat-menu #sportschuhe="matMenu">
+  <button mat-menu-item>Laufschuhe</button>
+  <button mat-menu-item>Trekkingschuhe</button>
+  <button mat-menu-item>Ballettschuhe</button>
+  <button mat-menu-item>Turnschuhe</button>
+</mat-menu>
+
+<mat-menu #stiefel="matMenu">
+  <button mat-menu-item>Businessstiefel</button>
+  <button mat-menu-item>Stiefelette</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Wanderstiefel</button>
+  <button mat-menu-item>Cowboystiefel</button>
+</mat-menu>
+
+<mat-menu #strassenschuhe="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Halbschuhe</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Sneaker</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">
+    Stiefel (nochmal)
+  </button>
+</mat-menu>
+
+<mat-menu #hosen="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="hosen_kurz">Kurze Hosen</button>
+  <button mat-menu-item [matMenuTriggerFor]="hosen_lang">Lange Hosen</button>
+  <button mat-menu-item [matMenuTriggerFor]="sporthosen">Sporthosen</button>
+</mat-menu>
+
+<mat-menu #hosen_kurz="matMenu">
+  <button mat-menu-item>Shorts</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Freizeithosen</button>
+  <button mat-menu-item>Kurze Sporthosen</button>
+</mat-menu>
+
+<mat-menu #hosen_lang="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Jeans</button>
+  <button mat-menu-item>Anzughosen</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Leinenhosen</button>
+  <button mat-menu-item>Cargo Hosen</button>
+  <button mat-menu-item>Arbeitshosen</button>
+  <button mat-menu-item>Leggins</button>
+</mat-menu>
+
+<mat-menu #sporthosen="matMenu">
+  <button mat-menu-item>Jogginghosen</button>
+  <button mat-menu-item>Badehosen</button>
+  <button mat-menu-item>Outdoor-Hosen</button>
+</mat-menu>
+
+<mat-menu #socken="matMenu">
+  <button mat-menu-item>Sportsocken</button>
+  <button mat-menu-item>Arbeitssocken</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Businesssocken</button>
+</mat-menu>
+
+<mat-menu #shirts="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">T-Shirts</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Langarmshirts</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Pullover</button>
+  <button mat-menu-item>Blusen</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Hoodies</button>
+</mat-menu>
+
+<mat-menu #jacken="matMenu">
+  <button mat-menu-item>Sakkos</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Regenjacken</button>
+  <button mat-menu-item [matMenuTriggerFor]="geschlecht">Winterjacken</button>
+  <button mat-menu-item>Fleecejacken</button>
+  <button mat-menu-item></button>
+</mat-menu>
+
+<mat-menu #geschlecht="matMenu">
+  <button mat-menu-item>Damen</button>
+  <button mat-menu-item>Herren</button>
+</mat-menu>
+
+<mat-menu #roecke="matMenu">
+  <button mat-menu-item>kurz</button>
+  <button mat-menu-item>lang</button>
+</mat-menu>
+
+<mat-menu #sportbekleidung="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="sporthosen">Sporthosen</button>
+  <button mat-menu-item [matMenuTriggerFor]="sportschuhe">Sportschuhe</button>
+  <button mat-menu-item>Funktionsunterwäsche</button>
+  <button mat-menu-item>Sportsocken</button>
+</mat-menu>
