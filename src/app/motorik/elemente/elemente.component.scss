@@ -1,0 +1,23 @@
+.bad-food {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    height: 14px;
+  }
+
+  input {
+    height: 12px;
+    margin: 0;
+  }
+
+  label {
+    font-size: 14px;
+    height: 14px;
+  }
+}
+
+.good-food {
+  display: flex;
+  flex-direction: column;
+}

@@ -11,19 +11,19 @@
           >
           <a [routerLink]="['sehen', 'farben']" mat-menu-item>Farbfehlsicht</a>
           <a [routerLink]="['sehen', 'kontrast']" mat-menu-item>Kontrast</a>
-          <a [routerLink]="['sehen', 'screenreader']" mat-menu-item
-            >Screenreader</a
-          >
+          <a [routerLink]="['sehen', 'screenreader']" mat-menu-item>
+            Screenreader
+          </a>
         </mat-menu>
 
         <button mat-button [matMenuTriggerFor]="motorik">Motorik</button>
         <mat-menu #motorik="matMenu">
-          <a [routerLink]="['motorik', 'elemente']" mat-menu-item
-            >Größe Bedienelemente</a
-          >
-          <a [routerLink]="['motorik', 'tastatur']" mat-menu-item
-            >Tastaturbedienung</a
-          >
+          <a [routerLink]="['motorik', 'elemente']" mat-menu-item>
+            Bedienbarkeit der Elemente
+          </a>
+          <a [routerLink]="['motorik', 'tastatur']" mat-menu-item>
+            Tastaturbedienung
+          </a>
         </mat-menu>
 
         <button mat-button [matMenuTriggerFor]="kognitiv">Kognitiv</button>
