@@ -1,37 +1,57 @@
 <h1>Semantisches HTML für Screenreader</h1>
 
-<p>TODO: Text warum wichtig</p>
+<section>
+  <p>
+    Bildschirmlesegeräte sind Audio-Schnittstellen. Anstatt Webinhalte visuell
+    für Nutzer in einem „Fenster“ oder auf dem Bildschirm des Monitors
+    anzuzeigen, konvertieren Screenreader den Text in synthetisierte Sprache, so
+    dass Benutzer den Inhalt hören. Sehende Nutzer haben es normalerweise sehr
+    schwer sich vorzustellen, sich immer auf ein Audio-Interface verlassen zu
+    müssen, da ihre Welt so sehr visuell ist. Die Erfahrung ist völlig anders,
+    das ist sicher. Das Wunder ist, dass die Option für eine Audio-Schnittstelle
+    überhaupt vorhanden ist. Ohne Screenreader wären die Personen, die blind
+    sind, auf andere angewiesen, die ihnen den Inhalt laut vorlesen. Diese
+    Technik macht einen unabhängigen Zugang zu Informationen für eine
+    Bevölkerung möglich, die sonst immer die Unterstützung und Hilfe von Anderen
+    benötigen würde.
+  </p>
 
-<p>
-  Beschreibung Einkaufsliste: Beide sehen optisch gleich aus, aber nur die
-  zweite ist als Liste ausgezeichnet und wird so vom Screenreader benannt.
-</p>
+  <p>
+    Beim Erstellen einer Webseite können wir Screenreader unterstützen, indem
+    wir sogenanntes Semantisches HTML verwenden. Dieses ergänzt die Struktur der
+    Seite um Informationen, um was es sich bei dem konkreten Inhalt genau
+    handelt. So können wir dem Screenreader mitteilen, dass der folgende Inhalt
+    z.B. eine Liste, ein Auswahlfeld oder die Seitennavigation ist.
+  </p>
 
-<p>
-  <strong>Übung</strong>: Lassen Sie sich vom Screenreader die beiden Listen
-  vorlesen. Was fällt Ihnen auf?
-</p>
+  <p>
+    <strong>Übung</strong>: Lassen Sie sich vom Screenreader die beiden Listen
+    vorlesen. Was fällt Ihnen auf?
+  </p>
 
-<div class="shopping">
-  <strong>Einkaufsliste</strong>
+  <div class="shopping-lists">
+    <div class="shopping">
+      <strong>Einkaufsliste</strong>
 
-  <p>Bananen</p>
-  <p>Brot</p>
-  <p>Käse</p>
-  <p>Schokolade</p>
-  <p>Waschmittel</p>
-</div>
+      <p>Bananen</p>
+      <p>Brot</p>
+      <p>Käse</p>
+      <p>Schokolade</p>
+      <p>Waschmittel</p>
+    </div>
 
-<section class="shopping">
-  <h1>Einkaufsliste</h1>
+    <article class="shopping">
+      <h1>Einkaufsliste 2</h1>
 
-  <ul>
-    <li>Bananen</li>
-    <li>Brot</li>
-    <li>Käse</li>
-    <li>Schokolade</li>
-    <li>Waschmittel</li>
-  </ul>
+      <ul>
+        <li>Äpfel</li>
+        <li>Kartoffeln</li>
+        <li>Toast</li>
+        <li>Milch</li>
+        <li>Eis</li>
+      </ul>
+    </article>
+  </div>
 </section>
 
 <section>
@@ -76,8 +96,8 @@
   <h2>Bilder und Icons</h2>
 
   <p>
-    TODO: Beschreibung ALT-Texte und eventuell aria-hidden bei "Icons + Text",
-    da wird dann alles 2x vorgelesen.
+    Es ist wichtig, Bildinhalte immer mit einem beschreibenden Text zu versehen.
+    So können auch Screenreader vermitteln, was auf diesem Bild zu sehen ist.
   </p>
 
   <div>
@@ -89,7 +109,13 @@
 
     <div class="images">
       <img class="image" src="amsel.jpg" width="250" height="180" />
-      <img class="image" src="amsel.jpg" width="250" height="180" alt="Bild" />
+      <img
+        class="image"
+        src="amsel.jpg"
+        width="250"
+        height="180"
+        alt="Ein Bild"
+      />
       <img
         class="image"
         src="amsel.jpg"
@@ -108,9 +134,10 @@
   </div>
 
   <p>
-    Gerade bei Icons ohne eigene Bedeutung, wie als Teil einer Überschrift, ist
-    es manchmal besser, das Icon-Bild vor dem Screenreader vollständig zu
-    verstecken.
+    Bei Icons ohne eigene Bedeutung, wie als Teil einer Überschrift, ist es
+    allerdings manchmal besser, das Icon-Bild vor dem Screenreader vollständig
+    zu verstecken, da es dem Benutzer keinerlei Informationen übermittelt und
+    nur den vorgelesenen Text verlängert.
   </p>
 
   <p>

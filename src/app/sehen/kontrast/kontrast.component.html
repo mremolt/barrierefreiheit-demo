@@ -1,6 +1,20 @@
-<h1>Kontrast</h1>
+<h2>Kontrast</h2>
 
-<p>TODO: Text warum wichtig.</p>
+<p>
+  Insbesondere Menschen mit einer Sehschwäche haben große Probleme Texte
+  überhaupt lesen zu können. Deshalb ist vor allem ein guter Kontrast notwendig.
+  Doch welcher Kontrast ist ausreichend, welcher nicht? Da sich dies mit dem
+  bloßen Auge nicht eindeutig einschätzen lässt, ermittelt man mit Hilfe
+  verschiedener Tools ein sogenanntes Kontrastverhältnis. Dieses ergibt sich aus
+  dem Kontrast zwischen Hintergrundfarbe und dem darauf liegenden Text.
+</p>
+
+<p>
+  In der Regel wird schwarzer Text auf weißem Hintergrund verwendet. Dies
+  entspricht dem höchstmöglichen Kontrastverhältnis von 21:1. In Bezug auf die
+  Barrierefreiheit ist für Texte auf Ihrer Webseite ein Kontrastverhältnis von
+  mindestens 4,5:1 erforderlich.
+</p>
 
 <p>
   <strong>Übung</strong>: Sehen Sie sich die beiden Varianten des gleichen
@@ -8,8 +22,19 @@
   betrachten und den Fließtext zu lesen.
 </p>
 
+<p>
+  Öffen Sie danach die Chrome-Extension
+  <a
+    href="https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf"
+  >
+    WCAG Color contrast checker
+  </a>
+
+  und überprüfen, welche Kontrastwerte bei beiden Beispiele tatsächlich haben.
+</p>
+
 <mat-tab-group>
-  <mat-tab label="Barrierefrei">
+  <mat-tab label="Hoher Kontrast">
     <div class="theme">
       <mat-card>
         <mat-card-header>
@@ -37,7 +62,7 @@
     </div>
   </mat-tab>
 
-  <mat-tab label="Nicht Barrierefrei">
+  <mat-tab label="Niedriger Kontrast">
     <div class="theme bad-theme">
       <mat-card>
         <mat-card-header>

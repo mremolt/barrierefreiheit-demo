@@ -1,7 +1,7 @@
-<h1>Skalierung von Inhalten</h1>
+<h2>Skalierung von Inhalten</h2>
 
 <p>
-  Viele Benutzer mit Sehschwäche nutzen die Möglichkeit, den Zoom im Browser
+  Viele Menschen mit Sehschwäche nutzen die Möglichkeit, den Zoom im Browser
   einzustellen. Zooms von 200% oder sogar 400% sind nicht ungewöhnlich.
 </p>
 
@@ -12,7 +12,7 @@
 
 <p>
   <strong>Übung</strong>: Zoomen Sie die Seite auf 200%, danach auf 400%. Was
-  beobachten Sie?
+  beobachten Sie bei den beiden Textboxen?
 </p>
 
 <section class="cards">
@@ -58,3 +58,35 @@
     </mat-card-content>
   </mat-card>
 </section>
+
+<h2>Skalierung von Grafiken</h2>
+
+<p>
+  Rastergrafiken, wie die JPEG oder PNG-Formate, sind im Web weit verbreitet.
+  Gerade bei kleineren Bildern muss man allerdings beachten, dass diese Formate
+  bei hohen Zoom-Stufen nicht mehr gut zu erkennen sind, da die einzelnen Pixel
+  einfach vergrößert werden.
+</p>
+
+<p>
+  Vektor-Formate wie z.B. SVG haben dieses Problem nicht, da sie unbegrenzt
+  skalieren können. Verwenden Sie also, wo sinnvoll möglich, Vektorgrafiken. Bei
+  Fotos ist das natürlich nicht möglich, aber Dinge wie Icons eigenen sich
+  perfekt für SVG.
+</p>
+
+<p>
+  <strong>Übung:</strong> Betrachten Sie die beiden Brillen unter der Übung.
+  Fällt Ihnen etwas auf? Zoomen Sie danach über den Button die Bilder auf 400%
+  und sehen Sie sich die beiden Brillen erneut an. Welches Bild ist ein
+  Vektor-Format?
+</p>
+<p>
+  <button mat-flat-button (click)="toggleZoom()">
+    Bildgröße zwischen 100% und 400% Zoom wechseln
+  </button>
+</p>
+<p>
+  <img [width]="imageWidth()" src="glasses.png" />
+  <img [width]="imageWidth()" src="glasses.svg" />
+</p>

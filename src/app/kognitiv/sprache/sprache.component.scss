@@ -1,4 +1,13 @@
 img {
   float: left;
-  padding: 0px 16px;
+  padding: 0px 12px 8px 0px;
+}
+
+.sprache {
+  display: flex;
+  gap: 16px;
+
+  article {
+    width: 33%;
+  }
 }

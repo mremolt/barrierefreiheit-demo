@@ -1,0 +1,51 @@
+<h2>Testautomatisierung der Barrierefreiheit</h2>
+
+<p>
+  Als Ergänzung zu den manuellen Tests kann viele grundlegende Fehler auch mit
+  automatisierten Tests erkennen.
+</p>
+
+<p>
+  <strong>Warnung</strong>: Diese Tools sind kein Ersatz für die manuellen
+  Tests. Es ist problemlos möglich, bei den unten stehenden Programmen
+  fehlerfrei durchzukommen und trotzdem eine nicht-barrierefreie Webseite
+  erstellt zu haben. Bestes Beispiel ist alles, was mit Texten zu tun hat. Kein
+  Tool kann feststellen, ob in der Bildbeschreibung etwas Sinnvolles steht, oder
+  nur "Ein Bild". Auch die korrekte Verwendung einfacher Sprache kann aktuell
+  keine Software überprüfen.
+</p>
+
+<p>
+  Dennoch bilden diese Programme eine sinnvolle, erste Verteidigungslinie. Sie
+  fangen viele offensichtlichere Fehler, wie zum Beispiel das Fehlen von
+  Bildbeschreibungen oder nicht ausreichende Farbkontraste ab. Somit sind die
+  manuellen Tester entlastet und können schneller die wirklichen Probleme
+  finden.
+</p>
+
+<h3>AXE-DevTools</h3>
+
+<p>
+  Die schon beim manuellen Testen aufgeführten
+  <a href="https://www.deque.com/axe/devtools/" target="_blank">AXE-DevTools</a>
+  eignen sich auch zur Automatisierung. Mit diesen können automatisch bei jeder
+  Codeänderung die gesamte Seite oder auch nur einzelne Komponenten auf
+  Verletzungen der Barrierefreiheit getestet werden.
+</p>
+
+<p>
+  Für die Techniker: Die AXE-DevTools können problemlos auch auf Unit-Test-Ebene
+  einzelne Components prüfen und sie lassen sich in jede CI-Pipeline einbauen.
+</p>
+
+<h3>IBM Equal Access Toolkit</h3>
+
+<p>
+  Auch das bereits erwähnte
+  <a href="https://www.ibm.com/able/toolkit/tools/#develop"
+    >IBM Equal Access Toolkit</a
+  >
+  kann nicht nur interaktiv, sondern automatisiert in einer CI-Umgebung
+  verwendet werden. Das automatische Erzeugen von Berichten ist mit
+  eingeschlossen, also sehr hilfreich für Reporting und Compliance.
+</p>

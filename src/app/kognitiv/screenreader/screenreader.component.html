@@ -1,5 +1,135 @@
+<h2>Kognitive Herausforderungen bei Benutzung eines Screenreaders</h2>
+
+<h3>Linearer Seitenaufbau</h3>
+
 <p>
-  TODO: Schöner Text, womit Benutzer von Schreenreadern Probleme haben. Dinge
-  wie Abkürzungen, Gender-Formulierungen sollten für Screenreader ausformuliert
-  werden. Möglichkeit alternative Texte für Screenreader anzubieten.
+  Am Bildschirm sind einzelne Seitenregionen wie Kopfzeile, Navigation und
+  Inhalt meist klar durch Position, Farbe und andere Gestaltungsmerkmale
+  unterscheidbar, in linearer Software wie einer Sprachausgabe wird der
+  komplette Inhalt jedoch sequenziell aufbereitet. Wenn also im Quelltext der
+  Text erst nach einer Kopfzeile und einer umfangreichen Navigation im Quellcode
+  steht, dann werden sie bei linearer Nutzung erst zum Schluss ausgelesen.
 </p>
+<p>
+  Diesem Problem entgegnen Screenreader, Vergrößerungssysteme, Browser und
+  andere Hilfsmittel durch erweiterte Funktionen zum Springen innerhalb einer
+  Seite und ermöglichen dadurch eine strukturelle Navigation mit der Tastatur.
+</p>
+
+<h3>Einfache Sprache</h3>
+
+<p>
+  Auch die bereits erwähnte einfache Sprache hilft bei Screenreadern enorm.
+  Mehrzeilige Schachtelsätze sind schon für Menschen ohne Behinderung oft
+  schwerer verständlich. Diese vorgelesen zu bekommen, macht dies nicht wirklich
+  besser.
+</p>
+
+<h3>Fremdwörter, Fachwörter und Abkürzungen</h3>
+
+<p>
+  Ein weiterer Punkt beim Thema Wortwahl sind Fremdwörter, Fachwörter und
+  Abkürzungen. Diese machen Screenreadern oft Probleme.
+</p>
+
+<p>
+  Eine Webseite ist auf eine bestimmte Sprache zum Beispiel auf deutsch
+  eingestellt. Werden auf dieser Seite Wörter einer anderen Sprache verwendet,
+  versucht ein Screenreader diese auch auf deutsch vorzulesen. Das ist im besten
+  Fall lustig, führt in den meisten Fällen aber dazu, dass diese Texte nur noch
+  schwer verständlich sind.
+</p>
+
+<p>
+  <strong>Übung</strong>: Ein gutes Beispiel ist direkt auf dieser Seite zu
+  finden: Lassen Sie sich gerne das Wort "Screenreader" vom Screenreader auf
+  deutsch vorlesen.
+</p>
+
+<p>
+  An Fachwörtern oder auch Kunstwörtern, wie zum Beispiel Produktnamen oder
+  Firmennamen, scheitern Screenreader auch regelmäßig. Eine Person, die auf
+  einen Screenreader angewiesen ist, hat so massive Probleme, den Inhalt zu
+  verstehen.
+</p>
+
+<p class="box">
+  Ein reales Beispiel aus unserer Firma: Mitarbeiter können sich im internen
+  Shop als Geschenk u.A. die "ALTEN-Socken" bestellen. Lassen sie sich den Satz
+  mal vom Screenreader vorlesen... Wer es nicht glaubt:
+  <a href="https://www.alten-shop.de/produkt/welcome-package/" target="_blank">
+    Sie sind hier zu finden </a
+  >.
+</p>
+
+<p>
+  Auch Abkürzungen, wie z.B. das "z.B.", "Tel" für Telefon, oder auch viele
+  andere, Stören den Vorlesefluss von Inhalten und erschweren das Verständnis.
+  Das gilt schon für Menschen ohne Behinderung, insbesondere aber, wenn die
+  Person auf einen Screenreader angewiesen ist. Je nach verwendetem Produkt
+  erkennt der Screenreader die eine oder andere Abkürzung, aber verlassen
+  sollten Sie sich darauf nicht.
+</p>
+
+<p>
+  <strong>Übung</strong>: Lassen Sie sich den folgenden Satz vom Screenreader
+  vorlesen. Welche Abkürzungen hat das Tool erkannt?
+</p>
+
+<p class="box">
+  Man sollte z.B. in einem Art. max. 0 Abkürzungen verwenden, insb. wenn man
+  Texte für Menschen mit Sehbehinderung oder kognitiven Einschränkungen etc.
+  formuliert.
+</p>
+
+<p>
+  Auch das Thema Gendern gehört in diese Kategorie. Wie Abkürzungen erschweren
+  sie besonders beim Vorlesen das Verständnis eines Inhalts. So empfiehlt der
+  Deutsche Blinden- und Sehbehindertenverband (DBSV) auch,
+  <a href="https://www.dbsv.org/gendern.html" target="_blank"
+    >wenn möglich alle Personenbezeichnungen auszuformulieren</a
+  >. Ist dies nicht möglich, sollte der Genderstern * verwendet werden, da
+  Unterstrich und Doppelpunkt schlechter erkennbar sind.
+</p>
+
+<p>
+  <strong>Übung</strong>: Lassen Sie sich den folgenden Satz vom Screenreader
+  vorlesen. Stimmt der Sinn des geschriebenen Satzes mit dem vorgelesenen
+  überein?
+</p>
+
+<p class="box">
+  Daher sollten der/die Mitarbeiter:in aktiv an Meetings teilnehmen!
+</p>
+
+<p>
+  Eine weitere Möglichkeit besteht darin, an wichtigen Stellen speziell für
+  Screenreader Alternativtexte zu hinterlegen.
+</p>
+
+<p>
+  <strong>Übung</strong>: Lassen Sie sich die beiden optisch identischen
+  Auswahlgruppen vorlesen. Welche ist leichter verständlich?
+</p>
+
+<div class="box">
+  <p>
+    <label for="radio1">Lehrer*in</label>
+    <input type="radio" id="radio1" />
+  </p>
+  <p>
+    <label for="radio2">Schüler*in</label>
+    <input type="radio" id="radio1" />
+  </p>
+</div>
+<div class="box">
+  <p>
+    <label for="radio1" aria-hidden="true">Lehrer*in</label>
+    <input type="radio" id="radio1" aria-label="Lehrer oder Lehrerin" />
+  </p>
+
+  <p>
+    <label for="radio2" aria-hidden="true">Schüler*in</label>
+    <input type="radio" id="radio1" aria-label="Schüler oder Schülerin" />
+  </p>
+</div>

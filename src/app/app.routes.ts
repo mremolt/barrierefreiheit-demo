@@ -9,8 +9,12 @@ import { SkalierungComponent } from './sehen/skalierung/skalierung.component';
 import { ScreenreaderComponent as SehenScreenreaderComponent } from './sehen/screenreader/screenreader.component';
 import { ElementeComponent } from './motorik/elemente/elemente.component';
 import { TastaturComponent } from './motorik/tastatur/tastatur.component';
+import { HomeComponent } from './home/home.component';
+import { ManuellComponent } from './testen/manuell/manuell.component';
+import { AutomatischComponent } from './testen/automatisch/automatisch.component';
 
 export const routes: Routes = [
+  { path: '', component: HomeComponent },
   {
     path: 'sehen',
     children: [
@@ -33,6 +37,13 @@ export const routes: Routes = [
     children: [
       { path: 'elemente', component: ElementeComponent },
       { path: 'tastatur', component: TastaturComponent },
+    ],
+  },
+  {
+    path: 'testen',
+    children: [
+      { path: 'manuell', component: ManuellComponent },
+      { path: 'automatisch', component: AutomatischComponent },
     ],
   },
 ];

@@ -1,6 +1,25 @@
 <h1>Navigation der Webseite</h1>
 
-<p>TODO: Erklärtext</p>
+<p>
+  Die Navigation einer Webseite mit einfach, übersichtlich und an den Inhalt der
+  Seite angepasst sein. Für Menschen mit geistigen Einschränkungen sind diese
+  Regeln besonders. Wenn ein nicht-behinderter, eventuell technisch versierter
+  Mensch sich auf einer Seite schlecht zurechtfindet, lange nach Inhalten suchen
+  muss und am Ende lieber Google statt der Seitennavigation benutzt, um einen
+  Inhalt zu finden - wie viel schwerer ist das für Gruppen, die ohnehin Probleme
+  haben?
+</p>
+
+<p>
+  Das müssen nicht einmal Menschen mit einer klassischen Behinderung sein. Schon
+  nicht Technik-affine Menschen haben mit der Bedienung einer Webseite mehr
+  Schwierigkeiten und sind für jede Unterstützung dankbar.
+</p>
+
+<p>
+  Hier ein plakatives Beispiel, wie man es nicht macht. Tief verschachtelte
+  Navigation, doppelte Inhalte, fragliche Gruppierung, alles dabei:
+</p>
 
 <button mat-flat-button [matMenuTriggerFor]="animals">
   Bekleidungskategorien - Variante Passierschein A38
@@ -94,6 +113,7 @@
   <button mat-menu-item>Sportsocken</button>
   <button mat-menu-item>Arbeitssocken</button>
   <button mat-menu-item [matMenuTriggerFor]="geschlecht">Businesssocken</button>
+  <button mat-menu-item (click)="showVideo()">A38</button>
 </mat-menu>
 
 <mat-menu #shirts="matMenu">
@@ -128,3 +148,20 @@
   <button mat-menu-item>Funktionsunterwäsche</button>
   <button mat-menu-item>Sportsocken</button>
 </mat-menu>
+
+@if (videoVisible()) {
+<div class="video">
+  <iframe
+    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSTUDIOCANAL.GERMANY%2Fvideos%2F10154737255684470%2F&show_text=false&width=560&t=0"
+    width="560"
+    height="314"
+    style="border: none; overflow: hidden"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    allowFullScreen="true"
+  ></iframe>
+</div>
+
+}

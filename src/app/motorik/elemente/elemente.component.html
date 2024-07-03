@@ -1,9 +1,32 @@
 <h1>Mit Elementen interagieren</h1>
 
 <p>
-  TODO: Text über Elemente müssen groß genug sein und ausreichend Abstand
-  zueinander haben, um Maus-Bedienung für alle zu ermöglichen. Ideal: Abstand +
-  man kann auch in die Umgebung klicken + auch das Label anklicken.
+  Alle Elemente auf einer Webseite, mit denen eine Person interagiert, müssen
+  leicht bedienbar sein. Das gilt umso mehr für Menschen mit motorischen
+  Einschränkungen.
+</p>
+
+<p>
+  Je größer das "Ziel" eines Mausklicks ist und je weiter entfernt sich andere
+  mögliche "Ziele" befinden, desto leichter können auch Menschen, die zum
+  Beispiel eine "Mund-Maus" verwenden, eine Webseite bedienen.
+</p>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/D_Siea79t4M?si=7XJRu35ccyFRfjbE"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+
+<p>
+  Die Grundregel ist: Wenn schon ein gesunder Mensch Schwierigkeiten hat, ein
+  Element auf einer Webseite zu "treffen" (zu bedienen), das gilt das noch viel
+  stärker für Menschen mit Einschränkungen.
 </p>
 
 <p>
@@ -12,36 +35,38 @@
   über den Namen und die Checkbox auszuwählen.
 </p>
 
-<section class="bad-food">
-  <p>Wählen Sie ihr Essen:</p>
-  <div>
-    <input type="checkbox" />
-    <label> Pizza </label>
-  </div>
-  <div>
-    <input type="checkbox" />
-    <label> Salat </label>
-  </div>
-  <div>
-    <input type="checkbox" />
-    <label> Spagetti </label>
-  </div>
-  <div>
-    <input type="checkbox" />
-    <label> Burger </label>
-  </div>
-  <div>
-    <input type="checkbox" />
-    <label> Sushi </label>
-  </div>
-</section>
+<div class="food-selection">
+  <section class="bad-food">
+    <p>Wählen Sie ihr Essen:</p>
+    <div>
+      <input type="checkbox" />
+      <label> Pizza </label>
+    </div>
+    <div>
+      <input type="checkbox" />
+      <label> Salat </label>
+    </div>
+    <div>
+      <input type="checkbox" />
+      <label> Spagetti </label>
+    </div>
+    <div>
+      <input type="checkbox" />
+      <label> Burger </label>
+    </div>
+    <div>
+      <input type="checkbox" />
+      <label> Sushi </label>
+    </div>
+  </section>
 
-<section class="good-food">
-  <p>Wählen Sie ihr Essen:</p>
+  <section class="good-food">
+    <p>Wählen Sie ihr Essen:</p>
 
-  <mat-checkbox type="checkbox">Pizza</mat-checkbox>
-  <mat-checkbox type="checkbox">Burger</mat-checkbox>
-  <mat-checkbox type="checkbox">Salat</mat-checkbox>
-  <mat-checkbox type="checkbox">Spagetti</mat-checkbox>
-  <mat-checkbox type="checkbox">Sushi</mat-checkbox>
-</section>
+    <mat-checkbox type="checkbox">Pizza</mat-checkbox>
+    <mat-checkbox type="checkbox">Burger</mat-checkbox>
+    <mat-checkbox type="checkbox">Salat</mat-checkbox>
+    <mat-checkbox type="checkbox">Spagetti</mat-checkbox>
+    <mat-checkbox type="checkbox">Sushi</mat-checkbox>
+  </section>
+</div>

@@ -15,6 +15,12 @@ mat-icon {
   margin-right: 10px;
 }
 
+section {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+}
+
 .color-field {
   margin: 16px;
   border: 1px solid #000;
@@ -80,4 +86,18 @@ mat-icon {
 
 .error {
   background-color: #ff4433;
+}
+
+.ishihara {
+  img {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+  }
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
 }

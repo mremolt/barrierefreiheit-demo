@@ -4,6 +4,7 @@
       <h1>Demo Barrierefreiheit</h1>
       <span class="nav-spacer"></span>
       <nav>
+        <a mat-button [routerLink]="['/']">Home</a>
         <button mat-button [matMenuTriggerFor]="visuals">Sehen</button>
         <mat-menu #visuals="matMenu">
           <a [routerLink]="['sehen', 'skalierung']" mat-menu-item
@@ -43,8 +44,12 @@
           Tests für Barrierefreiheit
         </button>
         <mat-menu #tests="matMenu">
-          <a [routerLink]="" mat-menu-item>Tools für manuelle Tests</a>
-          <a [routerLink]="" mat-menu-item>Testautomatisierung</a>
+          <a [routerLink]="['testen', 'manuell']" mat-menu-item
+            >Manuelle Tests</a
+          >
+          <a [routerLink]="['testen', 'automatisch']" mat-menu-item
+            >Testautomatisierung</a
+          >
         </mat-menu>
       </nav>
     </mat-toolbar>

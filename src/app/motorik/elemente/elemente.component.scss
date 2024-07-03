@@ -1,4 +1,13 @@
+.food-selection {
+  display: flex;
+  gap: 16px;
+}
+
 .bad-food {
+  border: 1px solid black;
+  border-radius: 8px;
+  max-width: 200px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
 
@@ -18,6 +27,10 @@
 }
 
 .good-food {
+  border: 1px solid black;
+  border-radius: 8px;
+  max-width: 200px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
 }
